@@ -1,0 +1,516 @@
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+======================================== */
+
+/* ========================================
+   MOBILE (320px - 767px)
+======================================== */
+@media (max-width: 767px) {
+  /* Container */
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  /* Typography */
+  .hero__title {
+    font-size: var(--fs-3xl);
+    line-height: 1.2;
+  }
+
+  .section__title {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Header */
+  .nav {
+    height: 70px;
+    padding: 0 var(--space-md);
+  }
+
+  .nav__logo {
+    font-size: var(--fs-lg);
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--white);
+    padding: var(--space-2xl) var(--space-md);
+    transition: left var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav__menu.show {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-lg);
+  }
+
+  .nav__link {
+    font-size: var(--fs-lg);
+    padding: var(--space-sm) 0;
+    width: 100%;
+  }
+
+  .nav__cta {
+    margin-left: 0;
+    margin-top: var(--space-md);
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__visual {
+    order: 1;
+  }
+
+  .hero__graphic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero__icon {
+    font-size: 2rem;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+    gap: var(--space-md);
+  }
+
+  .btn {
+    padding: 0.875rem 1.25rem;
+    font-size: var(--fs-sm);
+  }
+
+  .btn--large {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Statistics */
+  .stats__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .stat__card {
+    padding: var(--space-xl);
+  }
+
+  .stat__icon {
+    width: 60px;
+    height: 60px;
+    font-size: var(--fs-xl);
+  }
+
+  .stat__number {
+    font-size: var(--fs-4xl);
+  }
+
+  /* Barriers */
+  .barriers__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .barrier__card {
+    padding: var(--space-xl);
+  }
+
+  .barrier__icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--fs-lg);
+  }
+
+  /* Solutions */
+  .solutions__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .solution__header {
+    padding: var(--space-lg);
+  }
+
+  .solution__features {
+    padding: var(--space-lg);
+  }
+
+  /* CTA */
+  .cta__title {
+    font-size: var(--fs-2xl);
+  }
+
+  .cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer__brand {
+    grid-column: span 1;
+    text-align: center;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .legal__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+  }
+}
+
+/* ========================================
+   TABLET (768px - 1023px)
+======================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Container */
+  .container {
+    padding: 0 var(--space-xl);
+  }
+
+  /* Header */
+  .nav {
+    padding: 0 var(--space-xl);
+  }
+
+  .nav__list {
+    gap: var(--space-lg);
+  }
+
+  /* Hero */
+  .hero__container {
+    gap: var(--space-3xl);
+  }
+
+  .hero__title {
+    font-size: var(--fs-4xl);
+  }
+
+  .hero__buttons {
+    gap: var(--space-lg);
+  }
+
+  /* Statistics */
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  /* Barriers */
+  .barriers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  /* Solutions */
+  .solutions__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .solution__card:last-child {
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__brand {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+}
+
+/* ========================================
+   DESKTOP LARGE (1024px - 1279px)
+======================================== */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Hero */
+  .hero__title {
+    font-size: var(--fs-5xl);
+  }
+
+  /* Statistics */
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Barriers */
+  .barriers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Solutions */
+  .solutions__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========================================
+   DESKTOP EXTRA LARGE (1280px+)
+======================================== */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: var(--fs-6xl);
+  }
+
+  .hero__description {
+    font-size: var(--fs-xl);
+  }
+
+  /* Statistics */
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .stat__card {
+    padding: var(--space-3xl) var(--space-2xl);
+  }
+
+  /* Barriers */
+  .barriers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .barrier__card {
+    padding: var(--space-3xl);
+  }
+
+  /* Solutions */
+  .solutions__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2xl);
+  }
+}
+
+/* ========================================
+   NAVEGACIÓN MÓVIL ESPECÍFICA
+======================================== */
+@media (max-width: 767px) {
+  .nav__toggle.active .fa-bars::before {
+    content: "\f00d"; /* Icono X */
+  }
+
+  /* Overlay para cerrar menú */
+  .nav__overlay {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: calc(var(--z-fixed) - 1);
+  }
+
+  .nav__overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ========================================
+   UTILIDADES RESPONSIVE
+======================================== */
+
+/* Ocultar en móvil */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Ocultar en tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+/* Ocultar en desktop */
+@media (min-width: 1024px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* Mostrar solo en móvil */
+@media (min-width: 768px) {
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+/* Mostrar solo en tablet */
+.show-tablet {
+  display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet {
+    display: block !important;
+  }
+}
+
+/* Mostrar solo en desktop */
+.show-desktop {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+/* ========================================
+   MEJORAS DE ACCESIBILIDAD
+======================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero::before {
+    animation: none;
+  }
+
+  .hero__icon {
+    animation: none;
+  }
+
+  .scroll-down {
+    animation: none;
+  }
+}
+
+/* ========================================
+   MODO LANDSCAPE MÓVIL
+======================================== */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-lg) 0;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__visual {
+    order: 2;
+  }
+
+  .hero__title {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero__description {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__graphic {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ========================================
+   MEJORAS DE PERFORMANCE
+======================================== */
+@media (max-width: 767px) {
+  /* Reducir efectos pesados en móvil */
+  .hero::before {
+    display: none;
+  }
+
+  .stat__card:hover,
+  .barrier__card:hover,
+  .solution__card:hover {
+    transform: none;
+  }
+
+  /* Simplificar animaciones */
+  .hero__icon {
+    animation: none;
+  }
+}
+
+/* ========================================
+   CONTENEDOR FLUIDO PARA PANTALLAS MUY GRANDES
+======================================== */
+@media (min-width: 1600px) {
+  .container--fluid {
+    max-width: 1600px;
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
+  .section__title {
+    font-size: var(--fs-5xl);
+  }
+}

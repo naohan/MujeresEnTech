@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de privacidad de Mujeres en Tecnología. Conoce cómo protegemos y utilizamos tu información personal en nuestra plataforma.">
+    <meta name="robots" content="noindex, follow">
+    
+    <title>Política de Privacidad - Mujeres en Tecnología</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/icons/favicon.ico">
+    
+    <style>
+        .legal-page {
+            background: var(--gray-50);
+            min-height: 100vh;
+            padding-top: 100px;
+        }
+        
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        .legal-header {
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--space-2xl);
+            text-align: center;
+        }
+        
+        .legal-title {
+            font-family: var(--font-heading);
+            font-size: var(--fs-3xl);
+            color: var(--gray-800);
+            margin-bottom: var(--space-md);
+        }
+        
+        .legal-subtitle {
+            color: var(--gray-600);
+            font-size: var(--fs-lg);
+        }
+        
+        .legal-content {
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .legal-content h2 {
+            font-family: var(--font-heading);
+            font-size: var(--fs-xl);
+            color: var(--primary-color);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--gray-200);
+        }
+        
+        .legal-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .legal-content h3 {
+            font-size: var(--fs-lg);
+            color: var(--gray-800);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+        
+        .legal-content p {
+            margin-bottom: var(--space-md);
+            line-height: 1.7;
+            color: var(--gray-700);
+        }
+        
+        .legal-content ul, .legal-content ol {
+            margin-bottom: var(--space-md);
+            padding-left: var(--space-xl);
+        }
+        
+        .legal-content li {
+            margin-bottom: var(--space-sm);
+            line-height: 1.7;
+            color: var(--gray-700);
+            list-style: disc;
+        }
+        
+        .legal-content ol li {
+            list-style: decimal;
+        }
+        
+        .legal-content strong {
+            color: var(--gray-800);
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .highlight-box h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-lg) 0;
+            box-shadow: var(--shadow-md);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: var(--space-md);
+            text-align: left;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .data-table th {
+            background: var(--gradient-primary);
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background: var(--gray-50);
+        }
+        
+        .contact-info {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius-lg);
+            margin-top: var(--space-xl);
+        }
+        
+        .contact-info h3 {
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact-info p {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .contact-info a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: var(--space-xl);
+            transition: color var(--transition-fast);
+        }
+        
+        .back-button:hover {
+            color: var(--secondary-color);
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: var(--gray-600);
+            font-size: var(--fs-sm);
+            font-style: italic;
+            margin-top: var(--space-xl);
+        }
+        
+        .rights-section {
+            background: var(--success-color);
+            color: var(--white);
+            padding: var(--space-lg);
+            border-radius: var(--border-radius-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .rights-section h4 {
+            margin-bottom: var(--space-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="../index.html" class="nav__logo">
+                    <i class="fas fa-code"></i>
+                    <span>Women<span class="highlight">Tech</span></span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#estadisticas" class="nav__link">Estadísticas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/stories.html" class="nav__link">Historias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/resources.html" class="nav__link">Recursos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contact.html" class="nav__link nav__cta">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="legal-page">
+        <div class="legal-container">
+            <a href="../index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Volver al inicio
+            </a>
+            
+            <div class="legal-header">
+                <h1 class="legal-title">Política de Privacidad</h1>
+                <p class="legal-subtitle">
+                    Cómo protegemos y utilizamos tu información personal
+                </p>
+            </div>
+            
+            <div class="legal-content">
+                <div class="highlight-box">
+                    <h4><i class="fas fa-shield-alt"></i> Compromiso con tu Privacidad</h4>
+                    <p>
+                        En WomenTech, respetamos tu privacidad y nos comprometemos a proteger tu información personal. 
+                        Esta política explica cómo recopilamos, usamos y protegemos tus datos cuando utilizas nuestros servicios.
+                    </p>
+                </div>
+
+                <h2>1. Información que Recopilamos</h2>
+                
+                <h3>1.1 Información Personal que Proporcionas</h3>
+                <p>Recopilamos información que nos proporcionas directamente cuando:</p>
+                <ul>
+                    <li>Te registras para una cuenta</li>
+                    <li>Te suscribes a nuestro newsletter</li>
+                    <li>Participas en programas o eventos</li>
+                    <li>Completas formularios de contacto</li>
+                    <li>Participas en encuestas o estudios</li>
+                </ul>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Información</th>
+                            <th>Ejemplos</th>
+                            <th>Propósito</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Información de Identidad</td>
+                            <td>Nombre, apellido, edad, género</td>
+                            <td>Personalización y comunicación</td>
+                        </tr>
+                        <tr>
+                            <td>Información de Contacto</td>
+                            <td>Email, teléfono, dirección</td>
+                            <td>Comunicación y envío de recursos</td>
+                        </tr>
+                        <tr>
+                            <td>Información Profesional</td>
+                            <td>Ocupación, experiencia, intereses</td>
+                            <td>Recomendaciones personalizadas</td>
+                        </tr>
+                        <tr>
+                            <td>Información Educativa</td>
+                            <td>Nivel de estudios, especialización</td>
+                            <td>Sugerencia de programas adecuados</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>1.2 Información Recopilada Automáticamente</h3>
+                <p>Cuando visitas nuestro sitio web, recopilamos automáticamente:</p>
+                <ul>
+                    <li><strong>Información del dispositivo:</strong> Tipo de dispositivo, sistema operativo, navegador</li>
+                    <li><strong>Información de uso:</strong> Páginas visitadas, tiempo en el sitio, clics</li>
+                    <li><strong>Información técnica:</strong> Dirección IP, configuración regional, preferencias de idioma</li>
+                    <li><strong>Cookies y tecnologías similares:</strong> Para mejorar la experiencia del usuario</li>
+                </ul>
+
+                <h2>2. Cómo Utilizamos tu Información</h2>
+                
+                <p>Utilizamos tu información personal para los siguientes propósitos:</p>
+                
+                <h3>2.1 Provisión de Servicios</h3>
+                <ul>
+                    <li>Crear y mantener tu cuenta</li>
+                    <li>Proporcionar acceso a recursos y programas</li>
+                    <li>Facilitar conexiones con mentores y pares</li>
+                    <li>Procesar inscripciones a eventos y programas</li>
+                </ul>
+                
+                <h3>2.2 Comunicación</h3>
+                <ul>
+                    <li>Enviar newsletters y actualizaciones</li>
+                    <li>Notificar sobre nuevas oportunidades</li>
+                    <li>Responder a consultas y brindar soporte</li>
+                    <li>Enviar información sobre eventos relevantes</li>
+                </ul>
+                
+                <h3>2.3 Mejora de Servicios</h3>
+                <ul>
+                    <li>Analizar el uso del sitio web y los servicios</li>
+                    <li>Personalizar contenido y recomendaciones</li>
+                    <li>Desarrollar nuevas funcionalidades</li>
+                    <li>Realizar investigaciones y análisis estadísticos</li>
+                </ul>
+
+                <h2>3. Base Legal para el Procesamiento</h2>
+                
+                <p>Procesamos tu información personal basándonos en:</p>
+                <ul>
+                    <li><strong>Consentimiento:</strong> Cuando has dado tu consentimiento explícito</li>
+                    <li><strong>Ejecución de contrato:</strong> Para cumplir con los servicios solicitados</li>
+                    <li><strong>Interés legítimo:</strong> Para mejorar nuestros servicios y comunicarnos contigo</li>
+                    <li><strong>Cumplimiento legal:</strong> Para cumplir con obligaciones legales</li>
+                </ul>
+
+                <h2>4. Compartir Información</h2>
+                
+                <div class="highlight-box">
+                    <h4><i class="fas fa-lock"></i> Principio de No Venta</h4>
+                    <p><strong>Nunca vendemos tu información personal a terceros.</strong></p>
+                </div>
+                
+                <p>Podemos compartir tu información en las siguientes circunstancias limitadas:</p>
+                
+                <h3>4.1 Proveedores de Servicios</h3>
+                <p>
+                    Compartimos información con terceros que nos ayudan a operar nuestros servicios, como:
+                </p>
+                <ul>
+                    <li>Proveedores de hosting y servicios técnicos</li>
+                    <li>Servicios de email marketing</li>
+                    <li>Plataformas de análisis web</li>
+                    <li>Procesadores de pagos (cuando aplique)</li>
+                </ul>
+                
+                <h3>4.2 Partners Educativos</h3>
+                <p>
+                    Con tu consentimiento explícito, podemos compartir información relevante con:
+                </p>
+                <ul>
+                    <li>Instituciones educativas partner</li>
+                    <li>Empresas que ofrecen programas de becas</li>
+                    <li>Organizaciones de mentoring</li>
+                </ul>
+                
+                <h3>4.3 Requerimientos Legales</h3>
+                <p>
+                    Podemos divulgar información si es requerido por ley o para:
+                </p>
+                <ul>
+                    <li>Cumplir con procesos legales</li>
+                    <li>Proteger nuestros derechos o propiedad</li>
+                    <li>Prevenir fraudes o actividades ilegales</li>
+                    <li>Proteger la seguridad de usuarios</li>
+                </ul>
+
+                <h2>5. Seguridad de los Datos</h2>
+                
+                <p>Implementamos medidas de seguridad técnicas y organizacionales para proteger tu información:</p>
+                
+                <h3>5.1 Medidas Técnicas</h3>
+                <ul>
+                    <li>Cifrado SSL/TLS para transmisión de datos</li>
+                    <li>Cifrado de datos sensibles en almacenamiento</li>
+                    <li>Firewalls y sistemas de detección de intrusos</li>
+                    <li>Copias de seguridad regulares y seguras</li>
+                </ul>
+                
+                <h3>5.2 Medidas Organizacionales</h3>
+                <ul>
+                    <li>Acceso limitado a información personal</li>
+                    <li>Capacitación en privacidad para el personal</li>
+                    <li>Políticas de seguridad estrictas</li>
+                    <li>Auditorías regulares de seguridad</li>
+                </ul>
+
+                <h2>6. Retención de Datos</h2>
+                
+                <p>Conservamos tu información personal durante el tiempo necesario para:</p>
+                <ul>
+                    <li>Proporcionar nuestros servicios</li>
+                    <li>Cumplir con obligaciones legales</li>
+                    <li>Resolver disputas</li>
+                    <li>Hacer cumplir nuestros términos</li>
+                </ul>
+                
+                <p>
+                    Generalmente, conservamos la información de la cuenta mientras esté activa. 
+                    Si solicitas la eliminación de tu cuenta, eliminaremos tu información personal dentro de 30 días, 
+                    excepto donde la retención sea requerida por ley.
+                </p>
+
+                <h2>7. Tus Derechos</h2>
+                
+                <div class="rights-section">
+                    <h4><i class="fas fa-user-shield"></i> Tus Derechos de Privacidad</h4>
+                    <p>Tienes los siguientes derechos sobre tu información personal:</p>
+                </div>
+                
+                <h3>7.1 Derecho de Acceso</h3>
+                <p>Puedes solicitar una copia de la información personal que tenemos sobre ti.</p>
+                
+                <h3>7.2 Derecho de Rectificación</h3>
+                <p>Puedes solicitar que corrijamos información inexacta o incompleta.</p>
+                
+                <h3>7.3 Derecho de Eliminación</h3>
+                <p>Puedes solicitar que eliminemos tu información personal bajo ciertas circunstancias.</p>
+                
+                <h3>7.4 Derecho de Portabilidad</h3>
+                <p>Puedes solicitar que transfiramos tu información a otro proveedor de servicios.</p>
+                
+                <h3>7.5 Derecho de Oposición</h3>
+                <p>Puedes oponerte al procesamiento de tu información personal para ciertos propósitos.</p>
+                
+                <h3>7.6 Derecho de Limitación</h3>
+                <p>Puedes solicitar que limitemos el procesamiento de tu información en ciertas circunstancias.</p>
+
+                <h2>8. Cookies y Tecnologías de Rastreo</h2>
+                
+                <p>Utilizamos cookies y tecnologías similares para:</p>
+                <ul>
+                    <li>Recordar tus preferencias</li>
+                    <li>Analizar el tráfico del sitio web</li>
+                    <li>Personalizar contenido</li>
+                    <li>Mejorar la funcionalidad del sitio</li>
+                </ul>
+                
+                <p>
+                    Puedes controlar las cookies a través de la configuración de tu navegador. 
+                    Sin embargo, deshabilitar ciertas cookies puede afectar la funcionalidad del sitio.
+                </p>
+                
+                <p>
+                    Para más información, consulta nuestra <a href="cookies-policy.html">Política de Cookies</a>.
+                </p>
+
+                <h2>9. Transferencias Internacionales</h2>
+                
+                <p>
+                    Algunos de nuestros proveedores de servicios pueden estar ubicados fuera de tu país de residencia. 
+                    Cuando transferimos información personal internacionalmente, nos aseguramos de que esté protegida 
+                    mediante salvaguardas adecuadas.
+                </p>
+
+                <h2>10. Menores de Edad</h2>
+                
+                <p>
+                    Nuestros servicios están dirigidos a personas mayores de 16 años. No recopilamos intencionalmente 
+                    información personal de menores de 16 años sin el consentimiento parental adecuado.
+                </p>
+                
+                <p>
+                    Si descubrimos que hemos recopilado información de un menor sin consentimiento, 
+                    la eliminaremos lo antes posible.
+                </p>
+
+                <h2>11. Cambios a Esta Política</h2>
+                
+                <p>
+                    Podemos actualizar esta política de privacidad ocasionalmente. Te notificaremos sobre cambios significativos 
+                    por email o mediante un aviso prominente en nuestro sitio web.
+                </p>
+                
+                <p>
+                    Te recomendamos revisar esta política periódicamente para mantenerte informada sobre cómo 
+                    protegemos tu información.
+                </p>
+
+                <h2>12. Contacto y Quejas</h2>
+                
+                <p>
+                    Si tienes preguntas sobre esta política o quieres ejercer tus derechos de privacidad, 
+                    puedes contactarnos usando la información proporcionada a continuación.
+                </p>
+                
+                <p>
+                    También tienes derecho a presentar una queja ante la autoridad de protección de datos 
+                    de tu jurisdicción si consideras que hemos violado tus derechos de privacidad.
+                </p>
+
+                <div class="contact-info">
+                    <h3>Oficial de Protección de Datos</h3>
+                    <p>
+                        Para consultas sobre privacidad y ejercicio de derechos:
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:privacy@womentech.pe">privacy@womentech.pe</a><br>
+                        <strong>Teléfono:</strong> +51 1 234-5678 ext. 101<br>
+                        <strong>Dirección:</strong> Oficial de Privacidad<br>
+                        Av. Tecnología 123, Lima, Perú<br>
+                        <strong>Horario de atención:</strong> Lunes a Viernes, 9:00 - 17:00
+                    </p>
+                </div>
+                
+                <div class="last-updated">
+                    <p>Última actualización: 15 de enero de 2025</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Simplificado -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__legal">
+                    <p>&copy; 2025 WomenTech. Todos los derechos reservados.</p>
+                    <div class="legal__links">
+                        <a href="terms-of-service.html">Términos de Servicio</a>
+                        <a href="privacy-policy.html">Política de Privacidad</a>
+                        <a href="cookies-policy.html">Política de Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
